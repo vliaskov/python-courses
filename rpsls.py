@@ -1,4 +1,5 @@
-choices = ["rock", "paper", "scissors", "lizard", "spock"]
+import random
+choices = ["rock", "spock", "paper", "lizard", "scissors"]
 
 def name_to_number(name):
   if name in choices:
@@ -13,17 +14,26 @@ def number_to_name(number):
   else:
     return "invalid choice"  
 
-def rpsls(number):
-  rand.numaj
-  if number < len():
-    return s[]
+def rpsls(name):
+  user = name_to_number(name)
+  computer = random.randrange(5)
+  print "Player chooses ", name
+  print "Computer chooses ", number_to_name(computer)
+  mod = (user - computer) % 5
+  if (mod >= 3):
+    print "Computer wins!"
+  elif (mod > 0):
+    print "Player wins!"
   else:
-    return skata[]
+    print "Player and Computer tie!"
+  print "\n"
+  
+
+rpsls("rock")
+rpsls("spock")
+rpsls("paper")
+rpsls("lizard")
+rpsls("scissors")
 
 
-def online():
-  retun
-
-print name_to_number("spock")
-print number_to_name(3)
 
