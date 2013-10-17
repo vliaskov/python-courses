@@ -17,8 +17,8 @@ def number_to_name(number):
 def rpsls(name):
   user = name_to_number(name)
   computer = random.randrange(5)
-  print "Player chooses ", name
-  print "Computer chooses ", number_to_name(computer)
+  print "Player chooses", name
+  print "Computer chooses", number_to_name(computer)
   mod = (user - computer) % 5
   if (mod >= 3):
     print "Computer wins!"
